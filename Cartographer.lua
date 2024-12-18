@@ -326,7 +326,7 @@ function Cartographer:GetCurrentEnglishZoneName()
 	end
 	local z = mapZones[GetCurrentMapContinent()][GetCurrentMapZone()]
 	if z then
-		return BZ:GetReverseTranslation(z)
+		return z
 	else
 		local map = GetMapInfo()
 		if map == "WarsongGulch" then
