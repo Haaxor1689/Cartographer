@@ -271,6 +271,7 @@ function Cartographer_LookNFeel:OnEnable()
 	Cartographer:AddToMagnifyingGlass(L["Ctrl-MouseWheel to change scale"])
 	UIPanelWindows["WorldMapFrame"] = nil
 	WorldMapFrame:SetFrameStrata("HIGH")
+	WorldMapTooltip:SetFrameStrata("TOOLTIP")
 	WorldMapFrame:EnableMouse(not self.db.profile.locked)
 	WorldMapFrame:EnableMouseWheel(not self.db.profile.locked)
 	WorldMapButton:EnableMouse(not self.db.profile.locked)
